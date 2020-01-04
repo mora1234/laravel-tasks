@@ -9,9 +9,6 @@
     <body>
 
         <div id="app">test</div>
-
-        <!-- <script src="http://localhost/tasks/resources/assets/frontend/dist/assets/frontend.js"></script> -->
-        <!-- <link rel="stylesheet" href="http://localhost/tasks/resources/assets/frontend/dist/assets/frontend.css"> -->
         
 
     </body>

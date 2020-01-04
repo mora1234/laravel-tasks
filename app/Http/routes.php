@@ -10,31 +10,28 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
 
-/*Route::get(‘{data?}’, function()  
-{  
-return View::make(‘app’);  
-})->where(‘data’, ‘.*’);  */
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::post('/api/tasks', [
+
+Route::post('/tasks', [
     'uses' => 'TaskController@postTask'
 ]);
 
-Route::get('/api/tasks', [
+Route::get('/tasks', [
     'uses' => 'TaskController@getTasks'
 ]);
 
-Route::get('/api/task/{id}', [
+Route::get('/tasks/{id}', [
     'uses' => 'TaskController@getTask'
 ]);
 
-Route::put('/api/task/{id}', [
+Route::put('/tasks/{id}', [
     'uses' => 'TaskController@putTask'
 ]);
 
-Route::delete('/api/task/{id}', [
+Route::delete('/tasks/{id}', [
     'uses' => 'TaskController@deleteTask'
 ]);
